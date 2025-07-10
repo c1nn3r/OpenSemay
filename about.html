@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About — Metekem</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+  <nav class="container-fluid">
+    <ul><li><strong>METEKEM</strong></li></ul>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#" class="theme-toggle">🌙</a></li>
+    </ul>
+  </nav>
+
+  <main class="container" style="max-width: 600px; margin: 3rem auto; padding: 2rem;">
+    <div class="branding" style="margin-bottom: 2rem;">METEKEM</div>
+    
+    <section style="background: rgba(10,10,10,0.9); padding: 2rem; border: 2px solid rgba(0,255,136,0.3); clip-path: polygon(0 0, calc(100% - 30px) 0, 100% 30px, 100% 100%, 30px 100%, 0 calc(100% - 30px));">
+      <h2 style="color: #00ff88; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 1rem;">About Metekem</h2>
+      
+      <p><strong>Metekem</strong> delivers hyperlocal weather for Ethiopia with precision and style.</p>
+      
+      <p>Built on WeatherAPI and modern web technologies for comprehensive weather data including air quality, astronomy, and alerts.</p>
+      
+      <p style="color: #00ff88; font-weight: 500;">🌐 Progressive Web App • 🌗 Dark/Light Themes • 📍 Hyperlocal Precision • 🇪🇹 Bilingual Support • ⚡ Real-time Data</p>
+      
+      <p style="font-style: italic; color: #ffd700;">Open source. Ethiopia-first. Always free.</p>
+      
+      <div style="margin-top: 2rem; text-align: center;">
+        <a href="index.html" style="display: inline-block; padding: 0.8rem 2rem; background: rgba(0,255,136,0.2); color: #00ff88; text-decoration: none; border: 1px solid #00ff88; transition: all 0.2s;">← Back to Weather</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="container">
+    <small>© 2025 | WeatherApp | <a href="#">GitHub</a> | <a href="#">Terms</a></small>
+  </footer>
+
+  <script>
+    // Theme toggle functionality
+    const themeToggle = document.querySelector('.theme-toggle');
+    if (themeToggle) {
+      themeToggle.addEventListener('click', (e) => {
+        e.preventDefault();
+        document.body.classList.toggle('dark-theme');
+        themeToggle.textContent = document.body.classList.contains('dark-theme') ? '☀️' : '🌙';
+      });
+    }
+  </script>
+</body>
+</html>

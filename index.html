@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Metekem — Ethiopia's Hyperlocal Weather</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+  <nav class="container-fluid">
+    <ul><li><strong>METEKEM</strong></li></ul>
+    <ul>
+      <li><a href="about.html">About</a></li>
+      <li><a href="#" class="theme-toggle">🌙</a></li>
+      <li><a href="#" class="lang-toggle">🇺🇸</a></li>
+    </ul>
+  </nav>
+
+  <main class="container">
+    <div class="branding">METEKEM</div>
+    <div class="search-bar">
+      <input type="text" id="locationSearch" placeholder="Search your location... (e.g. Addis Ababa)">
+    </div>
+    <div class="container-box">
+      <div id="map"></div>
+      <div id="weatherPanel">
+        <h2 id="locationName">Location</h2>
+        
+        <div class="sidebar-tabs">
+          <button class="tab-button active" data-tab="current">Today</button>
+          <button class="tab-button" data-tab="forecast">Forecast</button>
+        </div>
+        
+        <div class="sidebar-content">
+          <div class="tab-content active" id="current-tab">
+            <div class="weather-item">
+              <div id="weatherDesc">Condition</div>
+              <div class="temp-display" id="temp">--°C</div>
+            </div>
+            <div class="weather-item">
+              <div id="wind"><span class="weather-icon">💨</span>Wind: --</div>
+            </div>
+            <div class="weather-item">
+              <div id="humidity"><span class="weather-icon">💧</span>Humidity: --</div>
+            </div>
+            <div class="weather-item">
+              <div id="pressure"><span class="weather-icon">🌡️</span>Pressure: --</div>
+            </div>
+            <div class="additional-info">
+              <!-- Additional weather info will be inserted here -->
+            </div>
+          </div>
+          
+          <div class="tab-content" id="forecast-tab">
+            <div class="forecast">
+              <h3>3-Day Forecast</h3>
+              <div class="forecast-day" id="day1"></div>
+              <div class="forecast-day" id="day2"></div>
+              <div class="forecast-day" id="day3"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="container">
+    <small>© 2025 | WeatherApp | <a href="#">GitHub</a> | <a href="#">Terms</a></small>
+  </footer>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="js/config.js"></script>
+  <script src="js/weather.js"></script>
+  <script src="js/map.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

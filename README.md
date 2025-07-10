@@ -12,7 +12,9 @@ Alternatively you can clone or download the repo and run it locally which should
 2. Clean up the UI – polish layout, spacing, font sizing, etc.  
 3. Update the About page – rewrite it to be more concise and human, not generic AI filler.  
 4. Change the project name – update all references from "Metekem" to "OpenSemay", including the title tag.  
-5. Apply any random UI improvements as needed.  
+5. The map is bugged on a mobile Viewport, Fix it if you can, use a PC to see the full version or request the Desktop version of the site on your phone
+6. Same topic, the Pin icon is Disgustingly bad, fix if you can, replace the icon or do whatever you want with it
+7. Apply any random UI improvements as needed.  
 
 If you want to add or remove anything, just push a commit or contact me directly.
 

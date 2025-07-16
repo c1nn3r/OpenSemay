@@ -2,7 +2,7 @@
 // Weather display management with enhanced features
 class WeatherDisplay {
   constructor() {
-    this.currentLanguage = localStorage.getItem('metekem-language') || 'en';
+    this.currentLanguage = localStorage.getItem('OpenSemay-language') || 'en';
     this.translations = {
       en: {
         location: 'Location',
@@ -46,7 +46,7 @@ class WeatherDisplay {
         thirdDay: 'ሦስተኛ ቀን',
         moreInfo: 'ተጨማሪ መረጃ',
         alerts: 'የአየር ሁኔታ ማስጠንቀቂያዎች',
-        searchPlaceholder: 'ቦታዎን ይፈልጉ... (ለምሳሌ አዲስ አበባ)'
+        searchPlaceholder: 'ቦታዎን ይፈልጉ...'
       }
     };
   }
@@ -196,7 +196,7 @@ class WeatherDisplay {
   
   setLanguage(lang) {
     this.currentLanguage = lang;
-    localStorage.setItem('metekem-language', lang);
+    localStorage.setItem('OpenSemay-language', lang);
     
     const t = this.translations[lang];
     
@@ -234,7 +234,7 @@ document.addEventListener('DOMContentLoaded', () => {
   window.weatherDisplay = new WeatherDisplay();
   
   // Set initial language from storage
-  const savedLang = localStorage.getItem('metekem-language') || 'en';
+  const savedLang = localStorage.getItem('OpenSemay-language') || 'en';
   window.weatherDisplay.setLanguage(savedLang);
   
   // Tab functionality

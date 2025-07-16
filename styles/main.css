@@ -91,6 +91,9 @@ nav strong {
   text-transform: uppercase;
   letter-spacing: 8px;
   margin: 2rem 0 1rem;
+  white-space: nowrap;      /* prevent line breaks */
+  overflow: hidden;         /* hide overflow */
+  text-overflow: ellipsis;  /* show ... if text too long */
   text-shadow: 
     0 0 20px rgba(212,175,55,0.5),
     0 0 40px rgba(212,175,55,0.3),

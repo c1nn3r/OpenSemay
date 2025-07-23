@@ -1,7 +1,7 @@
 
 const CONFIG = {
   // WeatherAPI.com (comprehensive weather data)
-  WEATHER_API_KEY: 'd244472d8cea47b49c781331251007',
+  WEATHER_API_KEY: 'ENTER YOUR API KEY HERE',
   WEATHER_API_BASE: 'https://api.weatherapi.com/v1',
   
   // Ethiopia boundaries (loosened)

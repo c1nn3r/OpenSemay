@@ -24,7 +24,7 @@ class WeatherDisplay {
         thirdDay: 'Third Day',
         moreInfo: 'More Info',
         alerts: 'Weather Alerts',
-        searchPlaceholder: 'Search your location... (e.g. Mekanisa)'
+        searchPlaceholder: 'Search your location... (e.g. Mekanisa )'
       },
       am: {
         location: 'ቦታ',

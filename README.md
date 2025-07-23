@@ -108,7 +108,7 @@ OpenSemay is released under the MIT License. Feel free to use, modify, and share
 
 ## Contact
 
-For questions, feature requests, or support, open an issue on GitHub or contact the maintainer via the repo or at c1nn3r@gmail.com
+For questions, feature requests, or support, open an issue on GitHub or contact the maintainer via the repo.
 
 
 
